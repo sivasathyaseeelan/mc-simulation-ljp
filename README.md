@@ -5,15 +5,15 @@ This loop initializes the coordinates of particles randomly within the simulatio
 them to the particles list.
 
 #### Monte Carlo Loop:
- At each step, it prints the current step number and total energy to the standard output
- A particle is randomly chosen to move
- The selected particle is moved randomly in each direction within a certain range (-1, 1) in
-reduced units
- The change in energy due to the particle move is evaluated
- The Metropolis acceptance rule is applied to decide whether to accept or reject the move
-based on the change in energy and the Boltzmann factor
- If the move is accepted, the particle coordinates and total energy are updated
- The energy of the system at each step is written to the CSV file.
+- At each step, it prints the current step number and total energy to the standard output
+- A particle is randomly chosen to move
+- The selected particle is moved randomly in each direction within a certain range (-1, 1) in
+  reduced units
+- The change in energy due to the particle move is evaluated
+- The Metropolis acceptance rule is applied to decide whether to accept or reject the move
+  based on the change in energy and the Boltzmann factor
+- If the move is accepted, the particle coordinates and total energy are updated
+- The energy of the system at each step is written to the CSV file.
 
 ### Function : wrap(particle)
 #### Purpose
@@ -90,4 +90,4 @@ represent x and y coordinates respectively), converts them to float, and appends
 the x and y lists.
 
 ### 3.Plotting the Curve:
-![plot](./assets/Screenshot from 2024-04-06 00-22-52.png)
+<img src="./assets/Screenshot from 2024-04-06 00-22-52.png"></img> 
