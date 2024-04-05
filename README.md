@@ -78,7 +78,10 @@ This function writes the step number and total energy of the system to a CSV fil
 
 It opens the 'energy.csv' file in append mode and writes the step number and total
 energy (en) in the format step,energy followed by a newline character
-Function : draw_curve(csv_file)
+
+
+### Function : draw_curve(csv_file)
+
 #### Initialization:
 Two empty lists x and y are initialized to store the x and y coordinates of the curve.
 
