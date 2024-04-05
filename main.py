@@ -6,6 +6,9 @@ import copy
 import os
 
 
+#Output directory
+output_dir = "./output"
+
 # Simulation Parameters
 N       = 500
 sigma   = 1
@@ -88,17 +91,22 @@ def particleEnergy(particle, particles, p):
 
 def writeEnergy(step, en):
 	'''Writes the energy to a file.'''
-	with open('energy.csv', 'a') as f:
+	with open('./output/energy.csv', 'a') as f:
 		f.write('{0},{1}\n'.format(step, en))
 
 
 if __name__ == "__main__":
+	#Checking output directory exists
+	if not os.path.exists(output_dir):
+    	# If it doesn't exist, create the directory
+		os.makedirs(output_dir)
+
 	# Clear files if they already exist.
-	if os.path.exists('energy.csv'):
-		os.remove('energy.csv')
+	if os.path.exists('./output/energy.csv'):
+		os.remove('./output/energy.csv')
 
 	# Initiating csv file:
-	with open('energy.csv', 'a') as f:
+	with open('./output/energy.csv', 'a') as f:
 		f.write('microstate,energy\n')
 
 	# Initialize the simulation box:

@@ -22,5 +22,5 @@ def draw_curve(csv_file):
     plt.show()
 
 if __name__ == "__main__":
-    csv_file = input("Enter the path of the CSV file: ")
+    csv_file = "./output/energy.csv"
     draw_curve(csv_file)
