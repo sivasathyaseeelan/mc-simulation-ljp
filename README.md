@@ -41,9 +41,9 @@ minimum image convention to account for periodic boundary conditions.
 
 It calculates the differences in each coordinate between two particles (dx, dy, dz).
 Then, it applies the minimum image convention by adjusting the differences if they exceed
-half the box length (halfL). Finally, it returns the squared distance between the particles.Function : 
+half the box length (halfL). Finally, it returns the squared distance between the particles.
 
-### Energy(particles)
+### Function : Energy(particles)
 #### Purpose 
 
 This function calculates the total energy of the system based on the Lennard-Jones potential.
