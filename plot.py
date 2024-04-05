@@ -1,6 +1,10 @@
 import csv
 import matplotlib.pyplot as plt
 
+
+csv_file = "./output/energy.csv"
+
+
 def draw_curve(csv_file):
     x = []
     y = []
@@ -22,5 +26,4 @@ def draw_curve(csv_file):
     plt.show()
 
 if __name__ == "__main__":
-    csv_file = "./output/energy.csv"
     draw_curve(csv_file)
