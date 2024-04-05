@@ -107,7 +107,7 @@ if __name__ == "__main__":
 
 	# Initiating csv file:
 	with open('./output/energy.csv', 'a') as f:
-		f.write('microstate,energy\n')
+		f.write('mcs,energy\n')
 
 	# Initialize the simulation box:
 	for particle in range(0, N):
