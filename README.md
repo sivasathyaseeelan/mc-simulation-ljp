@@ -79,13 +79,14 @@ This function writes the step number and total energy of the system to a CSV fil
 It opens the 'energy.csv' file in append mode and writes the step number and total
 energy (en) in the format step,energy followed by a newline character
 Function : draw_curve(csv_file)
-1. Initialization:
+#### Initialization:
 Two empty lists x and y are initialized to store the x and y coordinates of the curve.
-2.Reading Data from CSV File:
-« It opens the CSV file specified by csv_file in read mode
-« Using csv.reader(), it reads each row of data from the file
-« next(reader) is called to skip the header row if it is present
-« For each row in the CSV file, it extracts the first and second values (assuming they
+
+#### Reading Data from CSV File:
+- It opens the CSV file specified by csv_file in read mode
+- Using csv.reader(), it reads each row of data from the file
+- next(reader) is called to skip the header row if it is present
+- For each row in the CSV file, it extracts the first and second values (assuming they
 represent x and y coordinates respectively), converts them to float, and appends them to
 the x and y lists.
 
