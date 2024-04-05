@@ -89,5 +89,5 @@ Two empty lists x and y are initialized to store the x and y coordinates of the 
 represent x and y coordinates respectively), converts them to float, and appends them to
 the x and y lists.
 
-### 3.Plotting the Curve:
+### Plotting the Curve:
 <img src="./assets/Screenshot from 2024-04-06 00-22-52.png"></img> 
